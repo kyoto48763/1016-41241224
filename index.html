@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>我的 Bootstrap 網頁</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black; /* 改為黑色 */
+        }
+        .navbar-nav .nav-link {
+            color: black; /* 改為黑色 */
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+        }
+        .carousel-item {
+            height: 400px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .carousel-item.active {
+            opacity: 1;
+        }
+        .carousel-item img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+        .hero {
+            background-color: white;
+            color: black;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: white;
+            border-top: 1px solid #e9ecef;
+            margin-top: auto;
+        }
+        .text-carousel {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: black; /* 改為黑色 */
+        }
+        .video-section {
+            margin: 50px 0;
+        }
+        .embed-responsive {
+            margin-bottom: 20px;
+        }
+        .project-section {
+            margin: 50px 0;
+        }
+        .project-card {
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .project-title {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        .btn-custom {
+            background-color: black; /* 改為黑色 */
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3; /* 鼠標懸停時的背景顏色 */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">NFU-IM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切換導航">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">首頁 <span class="sr-only">(目前)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">定價</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">關於我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image1.jpg" class="d-block w-100" alt="第一張圖片">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" class="d-block w-100" alt="第二張圖片">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" class="d-block w-100" alt="第三張圖片">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">上一個</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="sr-only">下一個</span>
+        </a>
+    </div>
+
+    <div class="text-carousel" id="textCarousel">
+        <span>歡迎來到我們的網站!</span>
+    </div>
+
+    <div class="container video-section">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/lr8Yfhh6XGw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/bhNtcf2ghcM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/jIbQQ9PNlqw" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container project-section">
+        <h2 class="text-center">我的作品</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project-card">
+                    <img src="game1.jpg" class="project-image" alt="剪刀石頭布">
+                    <div class="project-title">剪刀石頭布</div>
+                    <a href="https://kyoto48763.github.io/0918-41241224/" class="btn btn-custom">查看作品</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project-card">
+                    <img src="game2.jpg" class="project-image" alt="記憶大考驗">
+                    <div class="project-title">記憶大考驗</div>
+                    <a href="https://kyoto48763.github.io/1009-41241224/" class="btn btn-custom">查看作品</a>
+                </div>
+            </div>
+        </div>                        
+    </div>
+
+    <div class="footer">
+        <p>© 2024 NFU-IM-41241224 版權所有.</p>
+        <p>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://line.me/tw/"><i class="fab fa-line"></i></a>
+        </p>
+        <p>聯絡我們: <a href="mailto:qetuolk4@gmail.com">qetuolk4@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const texts = ["歡迎來到我們的網站!", "聯繫我們以獲取更多信息!", "我們有最好的服務!"];
+        let currentIndex = 0;
+
+        $('#carouselExample').on('slide.bs.carousel', function () {
+            $('.carousel-item').css('opacity', '0');
+            currentIndex = (currentIndex + 1) % texts.length;
+            $('#textCarousel span').text(texts[currentIndex]);
+            setTimeout(() => {
+                $('.carousel-item').eq(currentIndex).css('opacity', '1');
+            }, 500);
+        });
+    </script>
+</body>
+</html>

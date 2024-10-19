@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>關於我</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 確保內容區域填滿視窗 */
+        }
+        .navbar {
+            background-color: white; /* 導覽欄白底 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff; /* 品牌名稱顏色 */
+        }
+        .navbar-nav .nav-link {
+            color: #007bff; /* 導覽選項顏色 */
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0056b3; /* 鼠標懸停顏色 */
+            text-decoration: underline;
+        }
+        .container {
+            margin-top: 80px;
+            background-color: white; /* 內容區背景 */
+            border-radius: 8px; /* 邊角圓潤 */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 增加陰影 */
+            padding: 30px; /* 內邊距 */
+        }
+        h1, h2 {
+            color: #343a40; /* 標題顏色 */
+        }
+        h1 {
+            margin-bottom: 20px; /* 大標題下方空隙 */
+        }
+        h2 {
+            margin-top: 30px; /* 小標題上方空隙 */
+            margin-bottom: 10px; /* 小標題下方空隙 */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: white; /* 底部顏色設置為白色 */
+            border-top: 1px solid #e9ecef; /* 添加分隔線 */
+            margin-top: auto; /* 使底部自動推至頁面底部 */
+        }
+        ul {
+            list-style-type: none; /* 去掉列表點 */
+            padding: 0; /* 去掉內邊距 */
+        }
+        li {
+            margin-bottom: 10px; /* 列表項下方空隙 */
+        }
+        a {
+            color: #007bff; /* 連結顏色 */
+        }
+        a:hover {
+            color: #0056b3; /* 連結鼠標懸停顏色 */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">NFU-IM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切換導航">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">定價</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">關於我 <span class="sr-only">(目前)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>關於我</h1>
+        <h2>自我介紹</h2>
+        <p>大家好！我叫謝曜鴻，目前是一名剛開始學習網頁開發的新手。我對編程充滿好奇，正努力學習各種技術，從 HTML、CSS 到 JavaScript，希望能逐步提升自己的能力。</p>
+        
+        <h2>學習之路</h2>
+        <p>雖然我剛入門，但我對網頁開發的熱情驅使我不斷學習。我的學習資源包括線上課程、教程和開發者社區。我相信只要堅持不懈，總有一天能夠打造出屬於自己的網站！</p>
+        
+        <h2>我的技能</h2>
+        <ul>
+            <li>正在學習 HTML 和 CSS，掌握網頁結構和樣式設計</li>
+            <li>正在接觸 JavaScript，探索互動功能的實現</li>
+            <li>希望未來能學習框架，如 React 和 Bootstrap，以提升開發效率</li>
+        </ul>
+        
+        <h2>我的目標</h2>
+        <p>我希望能在不久的將來，能夠完成一個自己的專案，並向他人展示我的學習成果。對我來說，能夠創造出有趣的網頁是最大的成就！</p>
+        
+        <h2>聯繫我</h2>
+        <p>如果你對我的學習之路有興趣或有任何建議，歡迎透過以下方式與我聯繫：</p>
+        <ul>
+            <li>電子郵件: <a href="mailto:qetuolk4@gmail.com">qetuolk4@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 NFU-IM-41241224 版權所有.</p>
+        <p>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://line.me/tw/"><i class="fab fa-line"></i></a>
+        </p>
+        <p>聯絡我們: <a href="mailto:qetuolk4@gmail.com">qetuolk4@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
